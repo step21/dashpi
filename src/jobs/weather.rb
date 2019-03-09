@@ -6,7 +6,7 @@ require 'time'
 require 'date'
 
 SCHEDULER.every '1h', first_in: 0 do |_job|
-    response = Net::HTTP.get('www.yr.no', '/place/Germany/North_Rhine-Westphalia/Düsseldorf/forecast_hour_by_hour.xml')
+    response = Net::HTTP.get('www.yr.no', '/place/Germany/North_Rhine-Westphalia/Wuppertal/forecast_hour_by_hour.xml')
     xml = XmlSimple.xml_in(response)
     location = xml['location'][0]['name'][0]
     sun = xml['sun'][0]
