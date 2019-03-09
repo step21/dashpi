@@ -6,7 +6,7 @@ require 'time'
 Dotenv.load
 
 count_tweets = 10
-things_to_search_for = 'chaosdorf OR #dorfleaks OR Dorfkueche -rt' # -rt excludes retweets
+things_to_search_for = '/dev/tal OR chaostal OR #chaostal OR utopiastadt -rt' # -rt excludes retweets
 
 tweets = Array.new(count_tweets).fill({id: 0, name: '', nickname: '', body: '', avatar: '', time: Time.new})
 
