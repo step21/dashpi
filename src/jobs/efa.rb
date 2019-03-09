@@ -2,7 +2,7 @@ require("uri")
 require("net/http")
 require("json")
 
-uri = URI('https://vrrf.finalrewind.org/D%C3%BCsseldorf/Luisenstr.json?no_lines=4')
+uri = URI('https://vrrf.finalrewind.org/Wuppertal/Schleswiger%20Stra%C3%9Fe.json?frontend=json&no_lines=4')
 http = Net::HTTP.new(uri.host, uri.port)
 http.use_ssl = true
 request = Net::HTTP::Get.new(uri.request_uri)
